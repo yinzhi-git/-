@@ -14,8 +14,11 @@ $(function(){
 	$('.fenye li:first-child a').css('width','64px');
 	$('.fenye li:last-child a').css('width','64px');
 	$('.pro-list li:nth-child(3n)').css('margin-right','0px');
-
-
+	$('.case li:nth-child(3n)').css('margin-right','0px');
+	$('.about-wh li:nth-child(4n)').css('margin-right','0px');
+	$('.about-wh li:nth-child(4n)').css('margin-right','0px');
+	
+	
 	$('.index-pro-list').hover(function(){
 		$(this).children('div').children('img:nth-child(1)').hide();
 		$(this).children('div').children('img:nth-child(2)').show();
@@ -38,6 +41,18 @@ $(function(){
 		$(this).siblings().children().children('div:nth-child(2)').children('h3').css('color','#333');
 		$(this).siblings().children().children('div:nth-child(2)').children('p').css('color','#666');
 	},function(){})
+	
+	//人才招聘下拉动画
+	$(".rencsiList-head").click(function(){
+		if( $(this).children("span").children("img").attr('src')=="img/xia.png" ){
+			$(this).children("span").children("img").attr("src","img/shang.png");
+			$(this).siblings().stop().slideDown(600);
+		}else{
+			$(this).children("span").children("img").attr("src","img/xia.png");
+			$(this).siblings().stop().slideUp(600);
+		}
+		
+	})
 	
 })
 //首页新闻切换

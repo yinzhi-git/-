@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/animate.min.css" />
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
 	</head>
-	<body>
+	<body style="background-color: #fff;">
 		<!--头部菜单栏-->
 		<div class="head">
 			<div class="header-in">
@@ -27,12 +27,12 @@
 				<!--菜单栏-->
 				<div class="head-nav">
 					<ul>
-						<li class="active"><a href="#" title="">首页</a></li>
+						<li><a href="#" title="">首页</a></li>
 						<li><a href="#" title="">产品中心</a></li>
 						<li><a href="#" title="">行业应用</a></li>
 						<li><a href="#" title="">新闻动态</a></li>
 						<li><a href="#" title="">关于迎旭</a></li>
-						<li><a href="#" title="">联系我们</a></li>
+						<li class="active"><a href="#" title="">联系我们</a></li>
 					</ul>
 				</div>
 				<!--右侧电话-->
@@ -41,10 +41,10 @@
 		</div>
 		<!--头部菜单栏end-->
 		<!--banner-->
-		<div class="content-banner" style="background-image: url();">
+		<div class="content-banner" style="background-image: url(img/banner-lx.jpg);">
 			<div class="width">
-				<h3>产品中心</h3>
-				<p>Product Center</p>
+				<h3>联系我们</h3>
+				<p>Contact us</p>
 			</div>
 		</div>
 		<!--banner end-->
@@ -54,16 +54,16 @@
 				<!--位置-->
 				<div class="weizhi-left">
 					<ul>
-						<li><a href="#" title="">首页</a></li>
-						<li>产品中心</li>
+						<li><a href="#" title="">迎旭颜料</a></li>
+						<li><a href="#" title="">联系我们</a></li>
+						<li>联系方式</li>
 					</ul>
 				</div>
 				<!--子导航-->
 				<div class="weizhi-nav">
 					<ul>
-						<li class="active"><a href="#" title="">环保无机颜料</a></li>
-						<li><a href="#" title="">镉系颜料</a></li>
-						<li><a href="#" title="">搪瓷颜料</a></li>
+						<li class="active"><a href="#" title="">联系方式</a></li>
+						<li><a href="#" title="">在线索样</a></li>
 					</ul>
 				</div>
 			</div>
@@ -71,9 +71,81 @@
 		<!--当前位置end-->
 		<!--主内容-->
 		<div class="main">
-			
-			
-			
+			<!--联系方式-->
+			<div class="con-top width">
+				<!--联系页面标题-->
+				<div class="con-title width">
+					<h3><span>联系方式</span></h3>
+					<p>郭先生(13807328559)　　圣小姐(18073256262  18973229675)</p>
+				</div>
+				<!--联系方式-->
+				<div class="lx-list width">
+					<ul>
+						<li>
+							<span><img alt="" src="img/lx1.png" /></span>
+							<h3>公司电话</h3>
+							<p>0731-58522268</p>
+						</li>
+						<li>
+							<span><img alt="" src="img/lx2.png" /></span>
+							<h3>公司传真</h3>
+							<p>0731-58522268</p>
+						</li>
+						<li>
+							<span><img alt="" src="img/lx3.png" /></span>
+							<h3>公司邮编</h3>
+							<p>410001</p>
+						</li>
+						<li>
+							<span><img alt="" src="img/lx4.png" /></span>
+							<h3>邮箱地址</h3>
+							<p>xtytyl@163.com</p>
+						</li>
+						<li>
+							<span><img alt="" src="img/lx5.png" /></span>
+							<h3>公司地址</h3>
+							<p>湘潭市岳塘区建设路街道 长潭路17号佳恒综合楼</p>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!--地图-->
+			<div class="map">
+				<div id="allmap" style="width: 100%;height: 100%;"></div>
+			</div>
+			<!--联系页面标题-->
+			<div class="con-title width">
+				<h3><span>在线留言</span></h3>
+				<p>我们期待你的留言反馈，我们会对您的留言进行备案。</p>
+			</div>
+			<!--在线留言表单-->
+			<div class="liuyan">
+				<form style="width: 100%;">
+					<ul class="liuyan-form">
+						<li>
+							<div>
+								<input placeholder="您的称呼" maxlength="8" />
+								<span class="maximg"><img alt="" src="img/form1.png" /></span>
+							</div>
+							<div class="active">
+								<input placeholder="您的电话" maxlength="11" />
+								<span class="maximg"><img alt="" src="img/form2.png" /></span>
+							</div>
+							<span class="clear"></span>
+						</li>
+						<li>
+							<textarea placeholder="您的建议" maxlength="140" ></textarea>
+							<span class="maximg"><img alt="" src="img/form3.png" /></span>
+						</li>
+					</ul>
+					<button type="submit" class="liuyan-but">立即提交</button>
+				</form>
+			</div>
+			<!--服务电话-->
+			<div class="con-foot">
+				<img alt="" src="img/icon-phone.png" />全国24小时咨询服务电话：<span>400-636-086</span>
+			</div>
 		</div>
 		<!--主内容end-->
 		
@@ -174,6 +246,18 @@
 	</script>
 	<script type="text/javascript">
 	    new WOW().init();//wow动画
+	</script>
+	<!--百度地图-->
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZROpYOgtMyBmw1HcZxog3hq2diKkNg2G"></script>
+	<script type="text/javascript">
+		// 百度地图API功能
+		var map = new BMap.Map("allmap");          
+		map.centerAndZoom(new BMap.Point(112.900, 28.219), 30);
+		var local = new BMap.LocalSearch(map, {
+			renderOptions:{map: map}
+		});
+		local.search("湘潭市岳塘区建设路街道 长潭路17号佳恒综合楼");
+		map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
 	</script>
 
 	
